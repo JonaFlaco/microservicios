@@ -1,4 +1,5 @@
 package uic.documento.feature.document;
+
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,11 +14,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
+
 @RestController
 @RequestMapping("api/document")
-@CrossOrigin({ "*" }) 
+@CrossOrigin({ "*" })
 
 public class DocumentController {
+
     @Autowired
     DocumentService documentService;
 
@@ -25,7 +28,6 @@ public class DocumentController {
     public Document findById(@PathVariable Long id) {
         return documentService.findById(id);
     }
-
 
     @GetMapping("/")
     public List<Document> findAll() {
@@ -46,4 +48,5 @@ public class DocumentController {
     public void deleteById(@PathVariable Long id) {
         documentService.deleteById(id);
     }
+    
 }

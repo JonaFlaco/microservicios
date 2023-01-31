@@ -19,3 +19,4 @@ public class Inscription {
     // private Integer stateId;
     // private Integer modalityId;
 }
+

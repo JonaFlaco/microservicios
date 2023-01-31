@@ -3,6 +3,7 @@ package uic.documento.feature.document;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import jakarta.transaction.Transactional;
 
 @Transactional
@@ -28,3 +29,4 @@ public class DocumentService {
         return documentRepository.findAll();
     }
 }
+

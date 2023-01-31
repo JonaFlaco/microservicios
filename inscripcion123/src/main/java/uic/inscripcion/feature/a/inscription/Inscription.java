@@ -1,4 +1,4 @@
-package uic.inscripcion.feature.inscripcion;
+package uic.inscripcion.feature.a.inscription;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -8,15 +8,14 @@ import lombok.Data;
 
 @Data
 @Entity
-public class Inscripcion {
+public class Inscription {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     private long id;
-    // private Integer  requestId;
-    // private Integer docUploadId;
-    // private Integer stateId ;
-    // private Integer requirementId;
-    private String observation;
+    // private Integer dniId;
+    // private Integer studentId;
+    // private Integer stateId;
+    // private Integer modalityId;
 }

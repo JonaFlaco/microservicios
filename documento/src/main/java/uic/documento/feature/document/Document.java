@@ -9,14 +9,11 @@ import lombok.Data;
 @Data
 @Entity
 public class Document {
-     
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+  
+    private long documentId;
+    private String documentSchool;
     
-    private long id;
-    // private Integer  requestId;
-    // private Integer docUploadId;
-    // private Integer stateId ;
-    // private Integer requirementId;
-    private String observation;
 }

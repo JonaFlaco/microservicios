@@ -1,4 +1,4 @@
-package uic.inscripcion.feature.inscription;
+package uic.inscripcion.feature.a.inscription;
 
 import java.util.List;
 
